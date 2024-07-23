@@ -1,0 +1,60 @@
+Connect (enter database name)> 
+jdbc:simpledb:studentdb
+recovering existing database
+transaction 1 committed
+
+SQL> stats;
+Statistics reporting set to: ON
+
+SQL> select sname from student;
+      sname
+-----------
+        joe
+        amy
+        max
+        sue
+        bob
+        kim
+        art
+        pat
+        lee
+transaction 2 committed
+Blocks read: 17 | written: 4
+
+SQL> select sname, gradyear, dname from student, dept where Did = majorid;
+      sname gradyear    dname
+-----------------------------
+        joe     2021  compsci
+        amy     2020     math
+        max     2022  compsci
+        sue     2022     math
+        bob     2020    drama
+        kim     2020     math
+        art     2021    drama
+        pat     2019     math
+        lee     2021  compsci
+transaction 3 committed
+Blocks read: 1 | written: 1
+
+SQL> stats off;
+Statistics reporting set to: OFF
+
+SQL> select sname from student;
+      sname
+-----------
+        joe
+        amy
+        max
+        sue
+        bob
+        kim
+        art
+        pat
+        lee
+transaction 4 committed
+
+SQL> stats on;
+Statistics reporting set to: ON
+
+SQL> exit;
+transaction 5 committed
