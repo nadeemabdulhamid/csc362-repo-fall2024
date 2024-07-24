@@ -1,11 +1,13 @@
 > **CSC 362 • Database Systems • Fall 2024**
 # Project 2: Page stats; Error checking; Date support
 
-## Unit Tests
+## Unit Tests & Version Control
 
-The following file contains unit tests for the 3 parts of this assignment. You should add a `simpledb.unittests` package to your project and copy this file into it. You may need to add the JUnit runtime library to your project build path as well.
+- The following file contains unit tests for the 3 parts of this assignment. You should add a `simpledb.unittests` package to your project and copy this file into it. You may need to add the JUnit runtime library to your project build path as well.
 
-- [FileMgrTest.java](./FileMgrTest.java)
+    - [FileMgrTest.java](./FileMgrTest.java)
+
+- On this and all of your projects that modify SimpleDB internals, you may make use of your local Git repository of the SimpleDB code to save snapshots of its state in case you need to refer back to or restore a previous working version if you end up in a state where you cannot debug your code at all. Right-click on the project in Eclipse, and use the "Team" submenu to manage your Git repository.
 
 
 ## Part 1: Statistics Reporting

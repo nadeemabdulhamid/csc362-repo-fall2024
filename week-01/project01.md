@@ -1,6 +1,8 @@
 > **CSC 362 • Database Systems • Fall 2024**
 # Project 1: JDBC Programming
 
+- On this and all of your projects that modify SimpleDB internals, you may make use of your local Git repository of the SimpleDB code to save snapshots of its state in case you need to refer back to or restore a previous working version if you end up in a state where you cannot debug your code at all. Right-click on the project in Eclipse, and use the "Team" submenu to manage your Git repository.
+
 ## Part 1: Simple JDBC client
 
 Write a JDBC program named `SectionInfo.java`. Your program should make a ***network*** connection to a SimpleDB engine that holds the university database of Figure 1.1. It should request a section number from the user and then print the professor of the section, the number of students in the section, and the number of “A” grades given. For example:
