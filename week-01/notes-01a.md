@@ -1,6 +1,17 @@
 > **CSC 362 • Database Systems • Fall 2024**
 # Lecture 1 - Intro
 
+Notes:
+- have Eclipse project prepped and ready to demo
+- print syllabus & [fig 1.1](./fig-1-1.pdf)
+
+
+## Questions to be answered:
+1. What is special about database systems?
+2. What are the two ways to connect to a database engine and integrate it with an application?
+3. What will this course be about?
+
+
 ## Syllabus
 
 Everything is on the Canvas website.
@@ -82,14 +93,13 @@ Databases use efficient file structures analogous to efficient in-memory data st
 
 - Achieved through forms of *caching*.
 
+>> Imagine a college degree requiring 300 credit hours (instead of 120), with courses that meet half as often, and people dropping in and out of courses arbitrarily, but we have to ensure they still get all the info they need to know and not miss anything, and still graduate in 4 years. That's the magic that a database system pulls off!
+
+
 ### Usability
 
 Allow users to express complex queries (search/update operations) on the data using easy and concise language (a *query language*)
 See Fig 1.3 vs SQL statement (page 6).
-
-
-https://quizizz.com/admin/quiz/66a0273dc8c66c6415b4828d?source=quiz_share
-
 
 
 
@@ -103,6 +113,12 @@ We will learn how a database engine satisfies these requirements and provides th
 - a language compiler/interpreter, for processing user queries;
 - query rewrite strategies, for transforming inefficient queries into efficient ones;
 - complex algorithms for indexing data, to support fast access.
+
+
+## Quizizz
+
+https://quizizz.com/admin/quiz/66a0273dc8c66c6415b4828d?source=quiz_share
+
 
 
 ## SQL

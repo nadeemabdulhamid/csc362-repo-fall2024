@@ -2,6 +2,9 @@
 # Project 1: JDBC Programming
 
 - On this and all of your projects that modify SimpleDB internals, you may make use of your local Git repository of the SimpleDB code to save snapshots of its state in case you need to refer back to or restore a previous working version if you end up in a state where you cannot debug your code at all. Right-click on the project in Eclipse, and use the "Team" submenu to manage your Git repository.
+- Any modified code files that you submit for this and all projects (e.g. the `SimpleIJ.java` program) should only contain modifications that are related to the tasks of this assignment. Portions of the code that are completely unrelated to any part of this assignment should not be modified or rewritten in any way. A [Diff tool](https://www.diffchecker.com/text-compare/) may be used to ensure that all modifications to code are relevant and on task. 
+- Remember that if you adopt/adapt code from a generative AI source (e.g. ChatGPT) you are entirely responsible for ensuring the correctness of the code, and you must put a comment attributing to the source (e.g. “ChatGPT”) and the prompt used (e.g. “Refactor the main method so that the bulk of the code that processes a command is moved to a separate method that simple takes a command string and processes it.”). 
+
 
 ## Part 1: Simple JDBC client
 
@@ -22,7 +25,7 @@ No such section.
 Your program ***must*** execute two SQL queries: one that retrieves the professor for that section from the `SECTION` table, and one that retrieves the grades for that section from the `ENROLL` table. Note that SimpleDB's version of SQL cannot perform calculations, so your Java code will need to do all the necessary arithmetic.
 
 Those of you with experience with SQL may realize that it is possible to solve the
-problem using a single multi-table query. However, I do not want you to do it this way, because I want you to experience writing a program that uses multiple result sets. Please use two single-table SQL queries, as requested above.
+problem using a single multi-table query. However, I do not want you to do it this way, because I want you to experience writing a program that uses multiple result sets. Please use two single-table SQL queries, as requested above. (Also, do not use SQL operators that we have not talked about, like `join`, `count`, `group by`, etc.)
 
 WARNING: A JDBC program can exhibit bizarre behavior when multiple result sets are
 open at the same time. (Section 2.2.2 of the text explains this issue.) Consequently, your program should always close a result set before opening another.
@@ -104,7 +107,22 @@ transaction 3 committed
 ```
 
 
-## Optional: Export
+
+## Part 4: Null values
+
+Modify the `doQuery()` method to handle field values that might be `null`. If a field value is `null`, it should print as `"(null)"` in parenthesis. Also, every column must be at least 6 characters wide to ensure there is space to show if a field value is `null`.
+
+Use the `wasNull()` method of `ResultSet`. See Exercise 2.8 in the textbook for an explanation. 
+
+To test that your changes work, you will need to generate records with null values for some fields. You can do this by inserting new records and completing omitting values for a particular field. For example, the following statement results in a `null` value for the `GradYear` field:
+
+```
+insert into STUDENT(SId, SName, MajorId) values (15, 'zaid', 20);
+```
+
+
+
+## (Optional) Part 5: Export
 
 (Exercise 2.7b) Export data to a text file as SQL commands to recreate a table. The client should take the name of the file, the name of the table, and the fields names as input. The first line of the file should be a `create` statement to recreate the table; the following lines should be SQL `insert` statements reflecting the data in the table. 
 

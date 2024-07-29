@@ -135,3 +135,8 @@ and to get you totally comfortable using it.
 - Later homework assignments will ask you to change the code for the system.
 The time you spend now getting comfortable with the system will make it possible
 for you to debug your future code confidently and effectively.
+
+C. Use version control.
+- As you make changes to the code in future projects, use the "Team" context menu (right-click on the project) to manage your local Git repository. The following video may be helpful to see a common workflow pattern. (The only difference is that you do not have permissions to push your local changes back to the remote branch, on GitHub. Nonetheless, you still have all the benefit of being able to manage changes and history on your own computer.) Also note, the interface (buttons/windows) on the latest version of Eclipse is quite different, but the concepts and process are the same.
+    - https://youtu.be/rblGZRWqFVI
+
