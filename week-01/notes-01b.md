@@ -180,7 +180,7 @@ rs.close();
 
 
 Contrast Fig 2.5 and 2.22. 
-(StudentMajor.java vs BadStudentMajor, or CleverFindMajors)
+([StudentMajor.java](https://github.com/nadeemabdulhamid/csc362-simpledb-fall24/blob/main/src/derbyclient/StudentMajor.java) vs [BadStudentMajor](https://github.com/nadeemabdulhamid/csc362-simpledb-fall24/blob/main/src/derbyclient/BadStudentMajor.java), or [CleverFindMajors](https://github.com/nadeemabdulhamid/csc362-simpledb-fall24/blob/main/src/derbyclient/CleverFindMajors.java))
 > The database system's query optimizer is probably going to figure out the same way (or a better way) of doing it.
 
 - In general, always trust the database optimizer to do the right thing.
