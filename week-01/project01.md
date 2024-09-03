@@ -69,7 +69,7 @@ transaction 3 committed
 
 ## Part 3: Import
 
-(Exercise 2.5) It is often useful to be able to create a text file that contains SQL commands. These commands can then be executed in batch by a JDBC program. Write a JDBC program that reads commands from a specified text file and executes them. Assume that each line of the file is a separate command. (These are **not** semicolon-terminated.)
+(Exercise 2.5) It is often useful to be able to create a text file that contains SQL commands. These commands can then be executed in batch by a JDBC program. [Modify SimpleIJ so that it reads commands from a specified text file and executes them.] Assume that each line of the file is a separate command. (These are **not** semicolon-terminated.)
 
 Extend the `SimpleIJ` program further so that it supports a new command: `import <filepath>;`
 
