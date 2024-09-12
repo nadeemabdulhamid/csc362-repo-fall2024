@@ -18,8 +18,7 @@ already contains a block, then you must also remove the entry for that block. Re
 that each `Buffer` object has a method `block()`, which tells you the block (if any)
 that is in that buffer.
 
-3. Get rid of the `bufferpool` array. You no longer need it. You also won’t need the
-`numAvailable` field, because you can determined the number of available buffers
+3. Get rid of the `numAvailable` field, because you can determine the number of available buffers
 by looking at the unpinned list.
 
 
