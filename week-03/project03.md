@@ -51,3 +51,6 @@ This program pins and unpins buffers and then checks the status of the buffer ma
 	public String availableLRUString()
 ```
 
+### Submit
+
+Upload your modified `BufferMgr.java` file. You should not need to modify any other files.
