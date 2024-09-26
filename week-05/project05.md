@@ -65,6 +65,6 @@ Transaction A commits
 The code for Project5Test contains a statement (i.e. line 97) which, when uncommented,
 results in an output in which transaction C does not abort. You should try that also.
 
-When you are done, submit the files `LockMgr.java`, `Transaction.java`,
+When you are done, submit the files `LockTable.java`, `Transaction.java`,
 and `ConcurrencyMgr.java` to Canvas.
 
