@@ -72,7 +72,7 @@ is 0 or 1. Instead, it must only check the 0th bit of that integer for 0 or 1. I
 methods that insert, delete, and format should continue to set the entire `EMPTY`/`INUSE`
 value to 0 or 1, because that will set all the null bits to 0 (which is `NOTNULL`).
 
-This problem is tricky. Please think it through carefully. It is important to remember that
+This problem is straightforward but intricate. Please think it through carefully. It is important to remember that
 the null bits for a record are stored ***on disk*** with that record. In particular, a record’s null
 bits are part of the 32-bit empty/inuse integer that is stored at the beginning of each
 record on the page. Consequently, setting a record’s value to null requires four steps:
