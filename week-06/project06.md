@@ -86,8 +86,8 @@ To make things easier, it might help to write some additional private methods to
 reading and writing of individual bits inside a specified slot, such as:
 
 ```
-int getFlagValue(RecordPage rp, int slot, int bitpos)
-void setFlagValue(RecordPage rp, int slot, int bitpos, int val)
+int getFlagValue(int slot, int bitpos)
+void setFlagValue(int slot, int bitpos, int val)
 ```
 
 These should be easier to use than `getBitVal` and `setBitVal` directly.
