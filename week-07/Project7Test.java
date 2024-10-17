@@ -5,6 +5,9 @@ import simpledb.tx.Transaction;
 
 public class Project7Test {
    public static void main(String[] args) {
+      File f = new File("hw7test/T.tbl");    // delete the old table file if it exists
+      if (f.isFile()) { f.delete(); }        // from a previous run of this test
+
       SimpleDB db = new SimpleDB("hw7test", 400, 8);
       Transaction tx = db.newTx();
 
