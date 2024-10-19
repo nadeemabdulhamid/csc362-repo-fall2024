@@ -46,7 +46,7 @@ public void setNull(String fldname) {
 }
 ```
 
-Use [Project7Test.java](./Project7Test.java) to help verify that your code works. Simplify or rewrite it during debugging, so that you can test features incrementally.
+Use [Project7UnitTest.java](./Project7UnitTest.java) to help verify that your code works. Simplify or rewrite it during debugging, so that you can test features incrementally.
 
 When you are done, submit `RecordPage.java` and `TableScan.java` to Canvas.
 
