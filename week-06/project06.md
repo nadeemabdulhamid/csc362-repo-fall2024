@@ -92,6 +92,6 @@ void setFlagValue(int slot, int bitpos, int val)
 
 These should be easier to use than `getBitVal` and `setBitVal` directly.
 
-You can use [Project6Test.java](./Project6Test.java) as a way to verify that your code works. You should simplify or rewrite it during debugging, so that you can test features *incrementally*.
+You can use [Project6UnitTest.java](./Project6UnitTest.java) as a way to verify that your code works. You should simplify or rewrite it during debugging, so that you can test features *incrementally*.
 
 When you are done, submit Layout.java and RecordPage.java to Canvas.
