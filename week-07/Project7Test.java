@@ -1,5 +1,6 @@
 package simpledb.record;
 
+import java.io.File;
 import simpledb.server.SimpleDB;
 import simpledb.tx.Transaction;
 
