@@ -53,4 +53,5 @@ field value to null if its argument is a null constant.
     - The `toString` method constructs a representation of the term in SQL syntax, such as
     "A > 3", "B is null", etc.
 
+When you are done, submit `Constant.java`, `Term.java`, and `TableScan.java` to Canvas.
 
