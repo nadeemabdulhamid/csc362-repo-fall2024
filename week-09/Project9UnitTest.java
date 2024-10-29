@@ -46,7 +46,8 @@ class Project9UnitTest {
 		// test a rename scan
 		testRename(new TableScan(tx, "T", layout));
 
-
+		// test a union scan
+		testUnion(new TableScan(tx, "T", layout));
 	}
 
 	void testSelect(Scan s) {
