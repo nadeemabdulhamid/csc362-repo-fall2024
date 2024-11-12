@@ -11,6 +11,8 @@ Complete these exercises:
 - 10.17
 
 
+Upload all the files that you completed for Project 10 and Project 11 to Canvas under Project 11.
+
 
 ---
 
